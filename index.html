@@ -1,0 +1,158 @@
+git clone https://github.com/your-username/your-username.github.io.git
+cd your-username.github.io
+# Copy all your website files (index.html, styles.css, images, etc.) into this folder
+git add .
+git commit -m "Initial commit"
+git push origin main
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Manoj KS | Portfolio</title>
+  <meta name="description" content="Personal portfolio of Manoj KS - Web Developer & Designer">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html { font-family: 'Poppins', sans-serif; }
+    body { font-feature-settings: "liga", "kern"; }
+  </style>
+</head>
+<body class="bg-gradient-to-br from-indigo-600 via-indigo-800 to-purple-900 text-white min-h-screen antialiased overflow-x-hidden">
+
+  <!-- Header -->
+  <header class="sticky top-0 bg-indigo-950/90 z-50 shadow">
+    <div class="max-w-5xl mx-auto flex items-center justify-between px-4 py-4">
+      <div class="font-bold text-2xl tracking-wide text-yellow-400">Manoj KS</div>
+      <nav class="hidden md:block" aria-label="Main navigation">
+        <ul class="flex space-x-8 text-base font-medium">
+          <li><a href="#home" class="hover:text-yellow-300">Home</a></li>
+          <li><a href="#skills" class="hover:text-yellow-300">Skills</a></li>
+          <li><a href="#projects" class="hover:text-yellow-300">Projects</a></li>
+          <li><a href="#contact" class="hover:text-yellow-300">Contact</a></li>
+        </ul>
+      </nav>
+      <!-- Mobile menu button -->
+      <button id="menu-btn" class="hidden flex flex-col space-y-1.5" aria-label="Open Menu" aria-expanded="false">
+        <span class="w-7 h-1 bg-yellow-400 rounded"></span>
+        <span class="w-7 h-1 bg-yellow-400 rounded"></span>
+        <span class="w-7 h-1 bg-yellow-400 rounded"></span>
+      </button>
+    </div>
+    <!-- Mobile nav -->
+    <nav id="mobile-nav" class="md:hidden px-4 pb-4 hidden" aria-label="Mobile navigation">
+      <ul class="bg-indigo-900/95 rounded-xl py-2 flex flex-col space-y-2 text-base font-medium shadow-xl" role="menu">
+        <li><a href="#home" class="block px-4 py-2 rounded hover:bg-indigo-700">Home</a></li>
+        <li><a href="#skills" class="block px-4 py-2 rounded hover:bg-indigo-700">Skills</a></li>
+        <li><a href="#projects" class="block px-4 py-2 rounded hover:bg-indigo-700">Projects</a></li>
+        <li><a href="#contact" class="block px-4 py-2 rounded hover:bg-indigo-700">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main -->
+  <main class="max-w-5xl mx-auto px-4 py-10">
+
+    <!-- Hero / About -->
+    <section id="home" class="mb-16">
+      <div class="flex flex-col md:flex-row items-center gap-8">
+        <img src="https://tse1.explicit.bing.net/th/id/OIP.6kMac9yR3g4AWWTvJTjiSgHaKX" alt="Profile"
+          class="w-36 h-36 md:w-44 md:h-44 rounded-full border-4 border-yellow-400 shadow-lg" />
+        <div>
+          <h1 class="text-3xl md:text-4xl text-yellow-300 font-extrabold mb-2">Hello, I'm Manoj KS</h1>
+          <h2 class="text-lg md:text-xl text-indigo-100 mb-3 font-semibold">Web Developer &amp; Designer</h2>
+          <p class="mb-5 text-lg leading-relaxed max-w-prose text-indigo-50">
+            I specialize in building accessible, inclusive web experiences focused on clarity, efficiency, and delight.
+          </p>
+          <a href="mailto:manoj@example.com?subject=Contact%20from%20Portfolio"
+            class="inline-block px-6 py-3 rounded bg-yellow-400 text-indigo-900 font-bold shadow-md hover:bg-yellow-300 focus:ring-2 focus:ring-yellow-300 transition">
+            Contact Me
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="mb-16">
+      <h2 class="text-2xl font-bold border-b-2 border-yellow-400 inline-block mb-6">Skills</h2>
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 mt-4">
+        <div class="bg-indigo-200 text-indigo-800 font-semibold tracking-wide rounded-lg px-4 py-3 shadow border border-indigo-300">HTML5</div>
+        <div class="bg-indigo-200 text-indigo-800 font-semibold tracking-wide rounded-lg px-4 py-3 shadow border border-indigo-300">CSS3 & SASS</div>
+        <div class="bg-indigo-200 text-indigo-800 font-semibold tracking-wide rounded-lg px-4 py-3 shadow border border-indigo-300">JavaScript</div>
+        <div class="bg-indigo-200 text-indigo-800 font-semibold tracking-wide rounded-lg px-4 py-3 shadow border border-indigo-300">React.js</div>
+        <div class="bg-indigo-200 text-indigo-800 font-semibold tracking-wide rounded-lg px-4 py-3 shadow border border-indigo-300">Node.js</div>
+        <div class="bg-indigo-200 text-indigo-800 font-semibold tracking-wide rounded-lg px-4 py-3 shadow border border-indigo-300">UI/UX Design</div>
+        <div class="bg-indigo-200 text-indigo-800 font-semibold tracking-wide rounded-lg px-4 py-3 shadow border border-indigo-300">Accessibility (WCAG)</div>
+        <div class="bg-indigo-200 text-indigo-800 font-semibold tracking-wide rounded-lg px-4 py-3 shadow border border-indigo-300">Git & GitHub</div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="mb-16">
+      <h2 class="text-2xl font-bold mb-6 border-b-2 border-yellow-400 inline-block">Projects</h2>
+      <div class="grid sm:grid-cols-2 gap-7">
+        <div class="bg-indigo-800 rounded-lg p-5 shadow hover:scale-105 transition">
+          <div class="font-bold text-lg mb-2 text-yellow-300">Personal Website</div>
+          <p class="text-base text-indigo-100">Responsive portfolio built with semantic HTML, WCAG-compliant styling, and smooth scroll navigation.</p>
+        </div>
+        <div class="bg-indigo-800 rounded-lg p-5 shadow hover:scale-105 transition">
+          <div class="font-bold text-lg mb-2 text-yellow-300">React Todo App</div>
+          <p class="text-base text-indigo-100">A task manager app using React, with local storage, filtering, and accessibility features.</p>
+        </div>
+        <div class="bg-indigo-800 rounded-lg p-5 shadow hover:scale-105 transition">
+          <div class="font-bold text-lg mb-2 text-yellow-300">Blog Platform</div>
+          <p class="text-base text-indigo-100">Blog CMS built with Node.js and Express, featuring secure login and content management tools.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section with Social Links -->
+    <section id="contact" class="max-w-lg ">
+      <h2 class="text-2xl font-bold mb-6 border-b-2 border-yellow-400 inline-block">Contact</h2>
+      <div class="flex flex-col gap-4">
+        <a href="https://www.linkedin.com/in/your-linkedin" target="_blank"
+           class="flex items-center justify-center px-5 py-3 rounded bg-blue-600 hover:bg-blue-700 text-white font-semibold text-lg shadow transition">
+          <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.76 0-5 ..."/></svg>
+          LinkedIn
+        </a>
+        <a href="https://github.com/your-github" target="_blank"
+           class="flex items-center justify-center px-5 py-3 rounded bg-gray-100 hover:bg-gray-300 text-gray-800 font-semibold text-lg shadow transition">
+          <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .5a11.54 ..."/></svg>
+          GitHub
+        </a>
+        <a href="mailto:manoj@example.com?subject=Contact%20from%20Portfolio"
+           class="flex items-center justify-center px-5 py-3 rounded bg-yellow-400 text-indigo-900 hover:bg-yellow-300 font-bold text-lg shadow transition">
+          <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 24 24"><path d="M2.01 4.857A2.001 2. ..."/></svg>
+          Email
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="text-center text-sm text-indigo-100 mt-12 pb-6 pt-10">
+    © 2025 Manoj KS — Designed with HFI principles & Tailwind CSS.
+  </footer>
+
+  <!-- Script for Mobile Nav -->
+  <script>
+    const menuBtn = document.getElementById("menu-btn");
+    const mobileNav = document.getElementById("mobile-nav");
+
+    menuBtn.addEventListener("click", () => {
+      mobileNav.classList.toggle("hidden");
+      const expanded = menuBtn.getAttribute("aria-expanded") === "true";
+      menuBtn.setAttribute("aria-expanded", !expanded);
+    });
+
+    mobileNav.querySelectorAll("a").forEach(link => {
+      link.addEventListener("click", () => {
+        mobileNav.classList.add("hidden");
+        menuBtn.setAttribute("aria-expanded", "false");
+      });
+    });
+  </script>
+</body>
+</html>
